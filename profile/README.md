@@ -1,39 +1,70 @@
 # Welcome to NexWatt ⚡
 
+```text
+ ███▄    █ ▓█████▒██   ██▒ █▒ █▓ ▄▄▄      ▄▄▄█████▓ ▄▄▄█████▓
+ ██ ▀█   █ ▓█   ▀ ▒██  ██▒▓██▒██▒▒████▄    ▓  ██▒ ▓▒ ▓  ██▒ ▓▒
+▓██  ▀█ ██▒▒███    ▒██ ██░ ▒████▒░▒██  ▀█▄  ▒ ▓██░ ▒░ ▒ ▓██░ ▒░
+▓██▒  ▐▌██▒▒▓█  ▄  ░ ▐██▓░ ░██ ░█░░██▄▄▄▄██ ░ ▓██░ ░  ░ ▓██░ ░ 
+▒██░   ▓██░░▒████▒ ░ ██▒▓░ ░██ ░█░ ▓█   ▓██▒  ▒██▄░     ▒██▄░  
+░ ▒░   ▒ ▒ ░░ ▒░ ░  ██▒▒▒  ░ ▒ ░░  ▒▒   ▓▒█░  ░██▒░     ░██▒░  
+░ ░░   ░ ▒░ ░ ░  ░▓██ ░▒░  ░ ░▒ ░   ▒   ▒▒ ░    ░░        ░░   
+   ░   ░ ░    ░   ▒ ▒ ░░     ░ ░    ░   ▒        ░         ░   
+         ░    ░  ░░ ░        ░          ░  ░               ░   
+                  ░ ░                                          
+```
+
 <p align="center">
   <img src="https://shields.io" alt="Junior Capstone">
-  <img src="https://shields.io" alt="Renewable Energy">
+  <img src="https://shields.io" alt="Founder">
   <img src="https://shields.io" alt="ECE & Robotics">
 </p>
 
 ---
 
-## 🛰️ Core Hardware Architecture
+## ⚡ Our Vision: Democratic & Resilient Green Infrastructure
+
+Growing up in **Myanmar**, I experienced firsthand what it means to live in a community without stable, reliable electrical power grids. In many developing regions, accessing basic electricity is an everyday challenge, and constructing large-scale hydro-power generation networks remains locked behind extreme technological barriers and critical safety compliance risks. 
+
+**NexWatt was founded to shatter those dependencies.** 
+
+Led as an independent undergraduate engineering research initiative, our mission is to apply rigid hardware-software co-design, power electronics, and embedded control loops to engineer open-source, affordable, and easily deployable microgrid solutions. We focus on bridging the gap between volatile natural forces and safe digital systems—developing hybrid solar tracking, robust wind-turbine harvesting arrays, and intelligent multi-chemistry storage protection networks tailored specifically for community resilience and low-resource environments.
+
+---
+
+## 🛰️ System Topology Blueprint
 
 ```text
-┌──────────────────────────────────────────────────────────┐
-│                   N E X W A T T   M I C R O G R I D      │
-├──────────────────────────────────────────────────────────┤
-│  [SOLAR HARVEST] ───► [ANALOG SENSING] ───► [TNU PIC18]  │
-│        │                     │                   │       │
-│        ▼                     ▼                   ▼       │
-│  [WIND TURBINE] ───► [MOSFET SWITCH] ───► [USB OUTPUT]   │
-└──────────────────────────────────────────────────────────┘
+        ┌────────────────────────────────────────────────────────┐
+        │                 ENVIRONMENTAL HARVESTERS               │
+        │    ☀️  [Solar Photovoltaic Array (East-to-West)]       │
+        │    💨  [Micro-Wind Turbine Kinetic Spinner]            │
+        └───────────────────────────┬────────────────────────────┘
+                                    │ (Chaotic Input Voltages)
+                                    ▼
+        ┌────────────────────────────────────────────────────────┐
+        │             ANALOG FRONT-END TELEMETRY LAYER           │
+        │    📋  [Resistor Divider Network (Voltage Scaling)]    │
+        │    📊  [Sub-Ohm Inline Shunt (Current Monitoring)]      │
+        └───────────────────────────┬────────────────────────────┘
+                                    │ (Safe 0-3.3V Analog Signals)
+                                    ▼
+        ┌────────────────────────────────────────────────────────┐
+        │             CENTRAL CONTROL CORE (THE BRAIN)           │
+        │    💻  [TNU PIC18 Microcontroller Peripheral Loop]      │
+        │    ⚡  [Hardware Finite State Machine (UVLO Control)]   │
+        └─────────────────────┬───────────┬──────────────────────┘
+                              │           │
+     (I2C Local Serial Bus)   ▼           ▼  (High-Speed PWM Commands)
+  ┌─────────────────────────────┐       ┌─────────────────────────────┐
+  │   SERIAL DISPLAY NETWORK    │       │     MOSFET SWITCH ARRAY     │
+  │  🤖 Secondary Screen Driver │       │  🔋 Battery Bank Isolation  │
+  │  📺 Live Power Diagnostics  │       │  🔌 5V USB Type-C Delivery  │
+  └─────────────────────────────┘       └─────────────────────────────┘
 ```
 
 ---
 
-## 🎯 Active Initiatives
-
-### ☀️ [Campus Eco-Charger](https://github.com/NexWatt/campus-eco-charger)
-Development of an all-season, low-voltage hybrid solar tracking and battery management utility charging station. 
-*   **Infrastructure:** Custom multi-layer PCB design routed entirely within **KiCad**.
-*   **Embedded Processing:** Real-time dual-source power calculation loops executed via register-level **TNU PIC18 MCU** firmware configurations.
-*   **Safety Integration:** Hardware-driven Under-Voltage Lockout (UVLO) state machines to maximize cell health and eliminate deep-discharge degradation.
-
----
-
-## 🛠️ Technology Integration Stack
+## 🛠️ Core Technology Integration Stack
 
 <p align="left">
   <img src="https://shields.io" alt="KiCad">
@@ -45,7 +76,9 @@ Development of an all-season, low-voltage hybrid solar tracking and battery mana
 
 ---
 
-## 👥 Engineering & Research Context
-*   **Lead Systems Architect:** [Ah-Pan (Moonaround)](https://github.com)
-*   **Research Framework:** Drawing from hands-on mechatronic background at the **University of Georgia (UGA) SUROE Lab** working on 3-axis Cartesian gantry robotic control networks.
-*   **Collaborative Vision:** Actively seeking professional partnerships with external university or industrial research teams specializing in embedded power path governance and smart autonomous systems.
+## 👥 Lead Architect & Research Profile
+*   **Founder / Systems Engineer:** [Ah-Pan (Moonaround)](https://github.com/Moonaround) — Electrical & Computer Engineering Student.
+*   **Mechatronics Foundation:** Drawing from practical research background at the **University of Georgia (UGA) SUROE Lab**, focusing on 3-axis Cartesian gantry robotic control networks and automated instrument placement.
+*   **Research Focus:** Open-source power electronics, isolated telemetry acquisition, and deterministic embedded safety safeguards.
+
+***
