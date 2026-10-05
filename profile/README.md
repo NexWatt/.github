@@ -1,7 +1,7 @@
 # Welcome to NexWatt ⚡
 
 ```text
-          27145263556082778577134∞         ░▒▓█ N E X W A T T █▓▒░       ahpan@leland
+          27145263556082778577134∞         ░▒▓█ N E X W A T T █▓▒░       
       22793818301194912983367336244                                      ────────────
     48820466521384146951941511609433       [SYSTEM PROFILE STATUS]       OS: Ubuntu 24.04 LTS
    266482133936072602491412737245870       STATUS: Active Research       Hardware: TNU PIC18 Platform
