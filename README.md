@@ -10,22 +10,22 @@
 
 ## 🛰️ Core Hardware Architecture
 
-<code>
-  ┌──────────────────────────────────────────────────────────┐
-  │                   N E X W A T T   M I C R O G R I D      │
-  ├──────────────────────────────────────────────────────────┤
-  │  [SOLAR HARVEST] ───► [ANALOG SENSING] ───► [TNU PIC18] │
-  │        │                     │                   │       │
-  │        ▼                     ▼                   ▼       │
-  │  [WIND TURBINE] ───► [MOSFET SWITCH] ───► [USB OUTPUT]   │
-  └──────────────────────────────────────────────────────────┘
-</code>
+```text
+┌──────────────────────────────────────────────────────────┐
+│                   N E X W A T T   M I C R O G R I D      │
+├──────────────────────────────────────────────────────────┤
+│  [SOLAR HARVEST] ───► [ANALOG SENSING] ───► [TNU PIC18]  │
+│        │                     │                   │       │
+│        ▼                     ▼                   ▼       │
+│  [WIND TURBINE] ───► [MOSFET SWITCH] ───► [USB OUTPUT]   │
+└──────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 🎯 Active Initiatives
 
-### ☀️ [Campus Eco-Charger](https://github.com)
+### ☀️ [Campus Eco-Charger](https://github.com/NexWatt/campus-eco-charger)
 Development of an all-season, low-voltage hybrid solar tracking and battery management utility charging station. 
 *   **Infrastructure:** Custom multi-layer PCB design routed entirely within **KiCad**.
 *   **Embedded Processing:** Real-time dual-source power calculation loops executed via register-level **TNU PIC18 MCU** firmware configurations.
