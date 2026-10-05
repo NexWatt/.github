@@ -1,4 +1,3 @@
-/profile
 # Welcome to NexWatt ⚡
 
 <p align="center">
